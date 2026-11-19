@@ -92,3 +92,6 @@ body{background:linear-gradient(180deg,#f2f4f6 0,#fff 940px);background-repeat:n
 @font-face{font-family:'Charter';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/charter-regular.woff2') format('woff2')}
 .authors,.affiliations,.author-notes{font-family:'Charter',Georgia,serif;font-weight:400}.authors{font-size:22px}.affiliations{font-size:17px}.author-notes{font-size:13px}
 @media(max-width:600px){.authors{font-size:18px}.affiliations{font-size:15px}.author-notes{font-size:12px}}
+@font-face{font-family:'Charter';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/charter-bold.woff2') format('woff2')}
+.authors,.affiliations,.author-notes{font-weight:700}.authors{font-size:26px}.authors sup{font-size:13px}.affiliations{font-size:21px;margin-top:10px}.author-notes{font-size:15px;margin-top:9px}
+@media(max-width:600px){.authors{font-size:22px;gap:12px 24px}.authors sup{font-size:11px}.affiliations{font-size:18px}.author-notes{font-size:14px}}
