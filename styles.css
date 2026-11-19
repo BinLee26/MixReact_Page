@@ -95,3 +95,5 @@ body{background:linear-gradient(180deg,#f2f4f6 0,#fff 940px);background-repeat:n
 @font-face{font-family:'Charter';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/charter-bold.woff2') format('woff2')}
 .authors,.affiliations,.author-notes{font-weight:700}.authors{font-size:26px}.authors sup{font-size:13px}.affiliations{font-size:21px;margin-top:10px}.author-notes{font-size:15px;margin-top:9px}
 @media(max-width:600px){.authors{font-size:22px;gap:12px 24px}.authors sup{font-size:11px}.affiliations{font-size:18px}.author-notes{font-size:14px}}
+.hero h1.paper-title{font-size:clamp(23px,2.2vw,30px);line-height:1.4;letter-spacing:0;max-width:1140px;margin:20px auto 30px;color:#293946}
+.hero h1 .project-name{white-space:nowrap}.hero h1 .title-mix,.hero h1 .title-react{filter:drop-shadow(0 1px 0 #75808d) drop-shadow(0 2px 1px #26374b25)}
