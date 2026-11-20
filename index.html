@@ -102,7 +102,12 @@
 
     <section id="reactions" class="section wrap" aria-labelledby="diversity-title">
       <div class="section-heading"><div><p class="eyebrow">One-to-many</p><h2 id="diversity-title">One cue. Many possible reactions.</h2></div><p>Given the same cue, MixReact generates distinct reactions while maintaining coherent behavior throughout physical execution.</p></div>
-      <div class="demo-frame"><video id="diversity-video" class="motion-loop" controls muted loop playsinline preload="none" poster="assets/images/video-one-to-many.jpg" aria-label="Three animated reactions generated from the same cue"><source src="assets/video/one-to-many.mp4" type="video/mp4"></video></div>
+      <div class="demo-frame"><video id="diversity-video" class="motion-loop" controls muted loop playsinline preload="none" poster="assets/images/video-one-to-many.jpg?v=2" aria-label="One-to-many reactions generated from text, audio, and video cues"><source src="assets/video/one-to-many.mp4?v=2" type="video/mp4"></video></div>
+      <div class="reaction-chapters" role="group" aria-label="Jump to a cue modality">
+        <button type="button" data-reaction-start="0" aria-controls="diversity-video" aria-pressed="true">Text</button>
+        <button type="button" data-reaction-start="13.5" aria-controls="diversity-video" aria-pressed="false">Audio</button>
+        <button type="button" data-reaction-start="26.6" aria-controls="diversity-video" aria-pressed="false">Video</button>
+      </div>
       <div class="runtime"><div><span class="eyebrow">Closed-loop performance</span><h3>Faster than real time, on average.</h3></div><div class="runtime-number">34.51 <span>steps / second</span></div><p>1.15× the nominal 30 Hz simulation rate.<br>Single RTX 3090 · FP32 · full closed loop</p></div>
     </section>
 

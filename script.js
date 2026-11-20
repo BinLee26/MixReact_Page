@@ -39,3 +39,24 @@ dialog.addEventListener('click', event => { if (event.target === dialog) dialog.
 dialog.addEventListener('close', () => { document.body.style.overflow = ''; });
 
 document.addEventListener('visibilitychange', () => { if (document.hidden) document.querySelectorAll('video').forEach(video => video.pause()); });
+
+const reactionVideo = document.querySelector('#diversity-video');
+const reactionChapters = [...document.querySelectorAll('[data-reaction-start]')];
+reactionChapters.forEach(button => button.addEventListener('click', () => {
+  const seekAndPlay = () => {
+    manualPauses.delete(reactionVideo);
+    reactionVideo.currentTime = Number(button.dataset.reactionStart);
+    reactionVideo.play().catch(() => {});
+  };
+  if (reactionVideo.readyState >= 1) seekAndPlay();
+  else {
+    reactionVideo.addEventListener('loadedmetadata', seekAndPlay, {once: true});
+    reactionVideo.load();
+  }
+}));
+reactionVideo.addEventListener('timeupdate', () => {
+  const current = reactionChapters.reduce((active, button) =>
+    reactionVideo.currentTime >= Number(button.dataset.reactionStart) ? button : active,
+    reactionChapters[0]);
+  reactionChapters.forEach(button => button.setAttribute('aria-pressed', String(button === current)));
+});
