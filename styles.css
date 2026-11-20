@@ -97,6 +97,3 @@ body{background:linear-gradient(180deg,#f2f4f6 0,#fff 940px);background-repeat:n
 @media(max-width:600px){.authors{font-size:22px;gap:12px 24px}.authors sup{font-size:11px}.affiliations{font-size:18px}.author-notes{font-size:14px}}
 .hero h1.paper-title{font-size:clamp(26px,2.6vw,36px);line-height:1.35;letter-spacing:0;max-width:1220px;margin:20px auto 30px;color:#293946}
 .hero h1 .project-name{white-space:nowrap}.hero h1 .title-mix,.hero h1 .title-react{filter:drop-shadow(0 1px 0 #75808d) drop-shadow(0 2px 1px #26374b25)}
-
-.reaction-chapters{display:flex;justify-content:center;gap:12px;margin-top:22px}.reaction-chapters button{min-width:100px;padding:10px 24px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--muted);font-size:16px;font-weight:700;cursor:pointer}.reaction-chapters button:hover{border-color:var(--teal);color:var(--teal)}.reaction-chapters button[aria-pressed="true"]{background:#eaf3ef;border-color:#88b29d;color:#367b62}.reaction-chapters button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-@media(max-width:600px){.reaction-chapters{gap:10px;margin-top:18px}.reaction-chapters button{min-width:0;flex:1;max-width:120px;padding:10px 16px;font-size:15px}}
